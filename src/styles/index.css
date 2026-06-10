@@ -39,26 +39,14 @@ body {
 
 .navbar__logo {
     display: flex;
-    flex-direction: column;
-    line-height: 1;
-    color: #fff;
-    gap: 2px;
+    align-items: center;
 }
 
-.navbar__logo-main {
-    font-family: var(--font-secondary);
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-}
-
-.navbar__logo-sub {
-    font-family: var(--font-primary);
-    font-size: 9px;
-    font-weight: 400;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.55);
+.navbar__logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .navbar__links {

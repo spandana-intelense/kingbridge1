@@ -4,94 +4,536 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sticky Grid Scroll | Codrops</title>
-  <meta name="description" content="A structured scroll-driven image grid where movement unfolds progressively within a sticky layout." />
-  <meta name="author" content="Theo Plawinski" />
-  <link rel="shortcut icon" href="https://tympanus.net/favicon/favicon.ico" />
+  <title>Kingbridge Centre — Where Transformation Happens</title>
+  <meta name="description" content="A mission-driven off-site conferencing, leadership development, and wellness destination in King City, Ontario. IACC Certified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/base.css" />
   <link rel="stylesheet" href="./styles/index.css" />
-  <script>
-    document.documentElement.className = 'js';
-  </script>
+  <script>document.documentElement.className = 'js';</script>
 </head>
 
 <body class="loading">
-  <header class="frame">
-    <div class="frame__infos">
-      <h1>Sticky Grid Scroll</h1>
-      <a href="https://tympanus.net/codrops/?p=106424">Tutorial</a>
-      <a href="https://github.com/theoplawinski/codrops-sticky-grid-scroll">GitHub</a>
-      <a href="https://tympanus.net/codrops/hub/">All demos</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">
+        <span class="navbar__logo-main">Kingbridge</span>
+        <span class="navbar__logo-sub">Centre</span>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#conferencing">Conferencing</a></li>
+        <li><a href="#revitalize">Revitalize</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#eco">Eco-Experiences</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery-section">Gallery</a></li>
+      </ul>
+      <a href="#contact" class="navbar__cta">Get a Quote</a>
     </div>
-    <nav class="frame__tags">
-      <a href="https://tympanus.net/codrops/hub/tag/gsap/">#gsap</a>
-      <a href="https://tympanus.net/codrops/hub/tag/sticky/">#sticky</a>
-      <a href="https://tympanus.net/codrops/hub/tag/gris/">#grid</a>
-      <a href="https://tympanus.net/codrops/hub/tag/scroll/">#scroll</a>
-    </nav>
-    <p class="frame__author">
-      By <a href="https://theoplawinski.com/?utm_source=codrops&utm_medium=tutorial&utm_campaign=sticky-grid-scroll">Theo Plawinski</a>
-    </p>
-  </header>
-  <main>
-    <section class="block block--intro">
-      <figure class="media">
-        <img class="media__image" src="../8.webp" alt="Image 8" />
-        <figcaption class="media__caption">Scroll-driven layout experiment</figcaption>
-      </figure>
-    </section>
-    <section class="block block--main">
-      <div class="block__wrapper">
-        <div class="content">
-          <h2 class="content__title">Sticky Grid Scroll</h2>
-          <p class="content__description">
-            A structured scroll-driven image grid where movement unfolds progressively within a sticky layout.
-          </p>
-          <a class="content__button" href="https://tympanus.net/codrops/?p=106424">Read the tutorial</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="block block--intro">
+    <figure class="media">
+      <img class="media__image" src="../8.webp" alt="Kingbridge Centre aerial view" />
+      <figcaption class="media__caption"></figcaption>
+    </figure>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">King City, Ontario</p>
+      <h1 class="hero__title">Kingbridge Centre</h1>
+      <p class="hero__tagline">A place that creates the conditions for transformation</p>
+    </div>
+    <a href="#discover" class="hero__scroll-hint">
+      <span class="hero__scroll-label">Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- STICKY GALLERY SCROLL -->
+  <section class="block block--main" id="gallery-section">
+    <div class="block__wrapper">
+      <div class="content"></div>
+      <div class="gallery">
+        <ul class="gallery__grid">
+          <li class="gallery__item"><img class="gallery__image" src="../1.webp" alt="Front Lobby" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../2.webp" alt="Morning Lobby" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../3.webp" alt="Bonfire" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../4.webp" alt="Outdoor Pool" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../5.webp" alt="Nature Trail" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../6.webp" alt="Grounds" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../7.webp" alt="Auditorium" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../8.webp" alt="Campus Aerial" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../9.webp" alt="Pond Patio Event" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../10.webp" alt="Guest Room" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../11.webp" alt="Indoor Hot Tub" /></li>
+          <li class="gallery__item"><img class="gallery__image" src="../12.webp" alt="Living Lab" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS MARQUEE -->
+  <section class="section--awards">
+    <div class="awards__inner">
+      <div class="awards__header">
+        <p class="section__eyebrow">Recognition &amp; Excellence</p>
+        <h2 class="awards__heading">Recognised as a<br>World-Class Destination</h2>
+      </div>
+      <div class="marquee__wrap" aria-hidden="true">
+        <div class="marquee__track">
+          <span>IACC Certified Excellence</span><span class="marquee__sep">◆</span>
+          <span>Best Conference Venue Canada</span><span class="marquee__sep">◆</span>
+          <span>Meeting Excellence Award</span><span class="marquee__sep">◆</span>
+          <span>Green Hospitality Certified</span><span class="marquee__sep">◆</span>
+          <span>Oak Ridges Moraine Partner</span><span class="marquee__sep">◆</span>
+          <span>IACC Certified Excellence</span><span class="marquee__sep">◆</span>
+          <span>Best Conference Venue Canada</span><span class="marquee__sep">◆</span>
+          <span>Meeting Excellence Award</span><span class="marquee__sep">◆</span>
+          <span>Green Hospitality Certified</span><span class="marquee__sep">◆</span>
+          <span>Oak Ridges Moraine Partner</span><span class="marquee__sep">◆</span>
         </div>
-        <div class="gallery">
-          <ul class="gallery__grid">
-            <li class="gallery__item">
-              <img class="gallery__image" src="../1.webp" alt="Image 1" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../2.webp" alt="Image 2" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../3.webp" alt="Image 3" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../4.webp" alt="Image 4" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../5.webp" alt="Image 5" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../6.webp" alt="Image 6" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../7.webp" alt="Image 7" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../8.webp" alt="Image 8" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../9.webp" alt="Image 9" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../10.webp" alt="Image 10" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../11.webp" alt="Image 11" />
-            </li>
-            <li class="gallery__item">
-              <img class="gallery__image" src="../12.webp" alt="Image 12" />
-            </li>
-          </ul>
+      </div>
+      <div class="awards__certs">
+        <div class="awards__cert">
+          <span class="awards__cert-name">IACC</span>
+          <span class="awards__cert-label">Certified Excellence</span>
+        </div>
+        <div class="awards__cert">
+          <span class="awards__cert-name">Green Key</span>
+          <span class="awards__cert-label">Eco Certification</span>
+        </div>
+        <div class="awards__cert">
+          <span class="awards__cert-name">35+</span>
+          <span class="awards__cert-label">Years of Excellence</span>
+        </div>
+        <div class="awards__cert">
+          <span class="awards__cert-name">Canada's Best</span>
+          <span class="awards__cert-label">Conference Venue</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOMEPAGE CONTENT -->
+  <main id="discover">
+
+    <!-- PLACE MATTERS -->
+    <section class="section section--tagline">
+      <div class="tagline__inner">
+        <p class="tagline__eyebrow">A Mission-Driven Destination</p>
+        <h2 class="tagline__heading">Place<br>Matters</h2>
+        <p class="tagline__body">The Kingbridge Centre is purpose-built for off-site conferencing, leadership development, collaborative problem-solving, and focused group work — in an environment intentionally designed to elevate how teams think, connect, and perform.</p>
+        <div class="tagline__actions">
+          <a href="#conferencing" class="btn btn--dark">Discover Kingbridge</a>
+          <a href="#" class="btn btn--outline-dark">Virtual Tour</a>
+        </div>
+      </div>
+      <div class="tagline__mosaic">
+        <div class="mosaic__img mosaic__img--tall">
+          <img src="../4.webp" alt="Outdoor pool" />
+        </div>
+        <div class="mosaic__img">
+          <img src="../1.webp" alt="Front lobby" />
+        </div>
+        <div class="mosaic__img">
+          <img src="../9.webp" alt="Event patio" />
         </div>
       </div>
     </section>
+
+    <!-- SERVICES -->
+    <section class="section section--services" id="conferencing">
+      <div class="section__header">
+        <p class="section__eyebrow">What We Offer</p>
+        <h2 class="section__heading">Kingbridge Experiences</h2>
+      </div>
+      <div class="services__grid">
+
+        <article class="service-card">
+          <div class="service-card__image">
+            <img src="../7.webp" alt="Conferencing" />
+          </div>
+          <div class="service-card__body">
+            <p class="service-card__tag">Conferencing</p>
+            <h3 class="service-card__title">An Environment That Fuels Better Outcomes</h3>
+            <p class="service-card__desc">IACC-certified spaces designed for focus, collaboration, and breakthrough thinking — far from the distractions of the office.</p>
+            <a href="#" class="service-card__link">Explore <span class="service-card__arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card" id="revitalize">
+          <div class="service-card__image">
+            <img src="../11.webp" alt="Revitalize" />
+          </div>
+          <div class="service-card__body">
+            <p class="service-card__tag">Revitalize</p>
+            <h3 class="service-card__title">Revitalize Mind &amp; Body</h3>
+            <p class="service-card__desc">Yoga, sound healing, cold plunge, indoor hot tub, and 5km of nature trails. What happens beyond the meeting room matters just as much.</p>
+            <a href="#" class="service-card__link">Explore <span class="service-card__arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card" id="leadership">
+          <div class="service-card__image">
+            <img src="../2.webp" alt="Leadership" />
+          </div>
+          <div class="service-card__body">
+            <p class="service-card__tag">Leadership</p>
+            <h3 class="service-card__title">Leadership Development</h3>
+            <p class="service-card__desc">Purpose-built programs to strengthen judgment, accelerate innovation, and solve complex challenges — including our signature superforecasting program.</p>
+            <a href="#" class="service-card__link">Explore <span class="service-card__arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="service-card" id="events">
+          <div class="service-card__image">
+            <img src="../13.webp" alt="Events" />
+          </div>
+          <div class="service-card__body">
+            <p class="service-card__tag">Events &amp; Celebrations</p>
+            <h3 class="service-card__title">Celebrate Your Team</h3>
+            <p class="service-card__desc">From corporate galas to team celebrations — our grand spaces and natural setting create unforgettable experiences for every occasion.</p>
+            <a href="#" class="service-card__link">Explore <span class="service-card__arrow">→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SPACES SHOWCASE -->
+    <section class="section--spaces" id="spaces">
+      <div class="spaces__wrap">
+        <div class="spaces__slide spaces__slide--active" data-index="0">
+          <div class="spaces__img"><img src="../7.webp" alt="Conferencing Rooms" /></div>
+          <div class="spaces__overlay"></div>
+          <div class="spaces__title">
+            <span class="spaces__title-l">CONFER</span>
+            <span class="spaces__title-r">ENCING</span>
+          </div>
+          <div class="spaces__badge">Conferencing</div>
+        </div>
+        <div class="spaces__slide" data-index="1">
+          <div class="spaces__img"><img src="../11.webp" alt="Wellness" /></div>
+          <div class="spaces__overlay"></div>
+          <div class="spaces__title">
+            <span class="spaces__title-l">WELL</span>
+            <span class="spaces__title-r">NESS</span>
+          </div>
+          <div class="spaces__badge">Revitalize</div>
+        </div>
+        <div class="spaces__slide" data-index="2">
+          <div class="spaces__img"><img src="../10.webp" alt="Guest Rooms" /></div>
+          <div class="spaces__overlay"></div>
+          <div class="spaces__title">
+            <span class="spaces__title-l">GUEST</span>
+            <span class="spaces__title-r">ROOMS</span>
+          </div>
+          <div class="spaces__badge">Accommodations</div>
+        </div>
+      </div>
+      <div class="spaces__controls">
+        <button class="spaces__btn spaces__btn--prev" aria-label="Previous">←</button>
+        <div class="spaces__counter">
+          <span class="spaces__count-cur">01</span>
+          <span class="spaces__count-sep"> / </span>
+          <span class="spaces__count-tot">03</span>
+        </div>
+        <button class="spaces__btn spaces__btn--next" aria-label="Next">→</button>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section--stats">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__top">
+            <span class="stat__num" data-count="35">0</span><span class="stat__suffix">+</span>
+          </div>
+          <span class="stat__label">Years of Excellence</span>
+        </div>
+        <div class="stat">
+          <div class="stat__top">
+            <span class="stat__num stat__num--text">IACC</span>
+          </div>
+          <span class="stat__label">Certified Excellence</span>
+        </div>
+        <div class="stat">
+          <div class="stat__top">
+            <span class="stat__num" data-count="5">0</span><span class="stat__suffix">km</span>
+          </div>
+          <span class="stat__label">Ecological Trails</span>
+        </div>
+        <div class="stat">
+          <div class="stat__top">
+            <span class="stat__num stat__num--text">45 min</span>
+          </div>
+          <span class="stat__label">North of Toronto</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section--quote">
+      <div class="quote__bg">
+        <img src="../6.webp" alt="Kingbridge grounds" />
+      </div>
+      <div class="quote__overlay"></div>
+      <div class="quote__content">
+        <span class="quote__mark">"</span>
+        <blockquote class="quote__text">
+          Throughout its history Kingbridge has always been known as a place that creates the conditions for transformation to occur.
+        </blockquote>
+        <p class="quote__attr">— The Kingbridge Story</p>
+      </div>
+    </section>
+
+    <!-- ARCH REVEAL -->
+    <section class="section--arch">
+      <div class="arch__sticky">
+        <div class="arch__img">
+          <img src="../6.webp" alt="Kingbridge grounds and nature" />
+        </div>
+        <div class="arch__text">
+          <p class="section__eyebrow">Oak Ridges Moraine</p>
+          <h2 class="arch__heading">Immerse Yourself<br>in Nature</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- NATURE GRID -->
+    <section class="section--nature-grid">
+      <div class="nature-grid__header">
+        <h2 class="nature-grid__heading">Back to<br>Nature</h2>
+        <p class="nature-grid__sub">5km of ecological trails through the Oak Ridges Moraine, where the Humber River flows through the property.</p>
+      </div>
+      <div class="nature-grid__photos">
+        <div class="nature-grid__photo nature-grid__photo--a">
+          <img src="../3.webp" alt="Bonfire gathering" />
+        </div>
+        <div class="nature-grid__photo nature-grid__photo--b">
+          <img src="../6.webp" alt="Grounds" />
+        </div>
+        <div class="nature-grid__photo nature-grid__photo--c">
+          <img src="../5.webp" alt="Nature Trail" />
+        </div>
+        <div class="nature-grid__photo nature-grid__photo--d">
+          <img src="../4.webp" alt="Outdoor Pool" />
+        </div>
+      </div>
+    </section>
+
+    <!-- RE-GEN LIVING LAB -->
+    <section class="section--regen" id="eco">
+      <div class="regen__image-panel">
+        <img src="../12.webp" alt="Re-Gen Living Lab permaculture garden" />
+      </div>
+      <div class="regen__content-panel">
+        <p class="section__eyebrow">Innovation in Practice</p>
+        <h2 class="regen__heading">Re-Gen<br>Living Lab</h2>
+        <p class="regen__body">Located on the Oak Ridges Moraine with the Humber River flowing through the property, Kingbridge is home to a living laboratory demonstrating regenerative innovations — from permaculture gardens and an onsite apiary to independent wastewater treatment and 5km of ecological trail systems.</p>
+        <ul class="regen__features">
+          <li>Permaculture Garden</li>
+          <li>Onsite Apiary</li>
+          <li>Oak Ridges Moraine</li>
+          <li>Humber River Ecosystem</li>
+        </ul>
+        <a href="#" class="btn btn--dark">Explore Eco-Experiences</a>
+      </div>
+    </section>
+
+    <!-- GUIDING PRINCIPLES -->
+    <section class="section--principles">
+      <div class="principles__header">
+        <p class="section__eyebrow">How We Think</p>
+        <h2 class="section__heading">Our Guiding Principles</h2>
+      </div>
+      <div class="principles__grid">
+        <div class="principle">
+          <span class="principle__num">01</span>
+          <h3 class="principle__title">Mission-Driven Enterprise</h3>
+          <p class="principle__body">Guided by a focused purpose to assist individuals and institutions in solving their most pressing challenges in leadership, innovation, and growth.</p>
+        </div>
+        <div class="principle">
+          <span class="principle__num">02</span>
+          <h3 class="principle__title">Place-Based Learning</h3>
+          <p class="principle__body">Harnessing the power of place — intentionally designed for holistic learning, rapid ideation, safe introspection, and new forms of innovation.</p>
+        </div>
+        <div class="principle">
+          <span class="principle__num">03</span>
+          <h3 class="principle__title">An Innovative Culture</h3>
+          <p class="principle__body">A spirit of curiosity, creativity, resilience, and continual improvement. We are passionate about crafting and hosting exceptional, memorable experiences.</p>
+        </div>
+        <div class="principle">
+          <span class="principle__num">04</span>
+          <h3 class="principle__title">Environmentally Focused</h3>
+          <p class="principle__body">Stewards of the Oak Ridges Moraine — supporting best practices in environmental stewardship while demonstrating innovative sustainable solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE OF KINGBRIDGE -->
+    <section class="section--more">
+      <div class="more__left">
+        <div class="more__left-img">
+          <img src="../8.webp" alt="Kingbridge campus aerial" />
+        </div>
+        <div class="more__left-caption">
+          <p class="section__eyebrow">The Campus</p>
+          <h2 class="more__heading">More of<br>Kingbridge</h2>
+        </div>
+      </div>
+      <div class="more__right">
+        <a href="#revitalize" class="more__card">
+          <div class="more__card-img"><img src="../4.webp" alt="Outdoor Pool" /></div>
+          <div class="more__card-footer">
+            <span class="more__card-label">Wellness</span>
+            <span class="more__card-num">01</span>
+          </div>
+        </a>
+        <a href="#eco" class="more__card">
+          <div class="more__card-img"><img src="../12.webp" alt="Re-Gen Living Lab" /></div>
+          <div class="more__card-footer">
+            <span class="more__card-label">Sustainability</span>
+            <span class="more__card-num">02</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="section--history">
+      <div class="history__header">
+        <p class="section__eyebrow history__eyebrow">Our Heritage</p>
+        <h2 class="history__heading">Three Decades of<br>Transformation</h2>
+      </div>
+      <div class="history__timeline">
+        <div class="timeline__progress">
+          <div class="timeline__progress-fill"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <span class="timeline__year">1989</span>
+          <p class="timeline__text">Designed by legendary architect Arthur Erickson in collaboration with Murray Koffler, the campus was conceived as one of Canada's first world-class health and wellness destinations — King Ranch.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <span class="timeline__year">1992</span>
+          <p class="timeline__text">CIBC transformed the property into a private, state-of-the-art leadership development and training facility, establishing its heritage in executive learning.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <span class="timeline__year">2001</span>
+          <p class="timeline__text">Purchased by John Abele, retired co-founder of Boston Scientific, who shaped the vision of Kingbridge as a global residential convening destination for collaborative innovation.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <span class="timeline__year">2021</span>
+          <p class="timeline__text">Entrusted to the Pathak Family Trust, evolving the vision into a living learning space designed to demonstrate and accelerate innovations with positive global impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--cta" id="contact">
+      <div class="cta__bg">
+        <img src="../3.webp" alt="Kingbridge bonfire gathering" />
+      </div>
+      <div class="cta__overlay"></div>
+      <div class="cta__content">
+        <p class="cta__eyebrow">Start Your Journey</p>
+        <h2 class="cta__heading">Ready to Transform<br>Your Team?</h2>
+        <p class="cta__body">Bring your team to a place purpose-built for breakthroughs. Our conference planning managers are ready to craft your perfect off-site experience.</p>
+        <div class="cta__actions">
+          <a href="mailto:sales@kingbridgecentre.com" class="btn btn--gold">Get a Quote</a>
+          <a href="#" class="btn btn--ghost">Virtual Tour</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- WORDMARK -->
+  <section class="section--wordmark">
+    <div class="wordmark__top">
+      <div class="wordmark__social">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+      </div>
+      <p class="wordmark__copy">© 2024 Kingbridge Centre. All Rights Reserved.</p>
+      <div class="wordmark__links">
+        <a href="#">Virtual Tour</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="wordmark__text" aria-hidden="true">KINGBRIDGE</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">Kingbridge<br><span>Centre</span></p>
+        <p class="footer__mission">A mission-driven organization supporting off-site conferencing, leadership development, and collaborative problem-solving since 1989.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h4>Experiences</h4>
+        <ul>
+          <li><a href="#">Conferencing</a></li>
+          <li><a href="#">Revitalize</a></li>
+          <li><a href="#">Leadership Programs</a></li>
+          <li><a href="#">Eco-Experiences</a></li>
+          <li><a href="#">Events &amp; Celebrations</a></li>
+          <li><a href="#">Weddings</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blogs &amp; News</a></li>
+          <li><a href="#">Virtual Tour</a></li>
+          <li><a href="#">Book Guestroom</a></li>
+          <li><a href="#">Share Feedback</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Find Us</h4>
+        <address>
+          <p>12750 Jane Street</p>
+          <p>King City, Ontario</p>
+          <p>Canada L7B 1A3</p>
+        </address>
+        <a href="tel:+19058333086">+1-905-833-3086</a>
+        <a href="mailto:sales@kingbridgecentre.com">sales@kingbridgecentre.com</a>
+        <a href="#contact" class="btn btn--gold footer__quote-btn">Get a Quote</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Kingbridge Centre. All Rights Reserved.</p>
+      <p>45 minutes north of Toronto &nbsp;·&nbsp; IACC Certified</p>
+    </div>
+  </footer>
+
   <script type="module" src="./scripts/index.js"></script>
 </body>
 

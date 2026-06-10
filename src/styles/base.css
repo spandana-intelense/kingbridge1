@@ -1,11 +1,14 @@
 :root {
-    --font-primary: Arial, sans-serif;
-    --font-secondary: Times, serif;
+    --font-primary: 'Inter', Arial, sans-serif;
+    --font-secondary: 'Cormorant Garamond', Times, serif;
 
-    --color-text: #000;
-    --color-bg: #fff;
-    --color-link: #000;
-    --color-link-hover: #000;
+    --color-text: #1a1a17;
+    --color-bg: #f5f2eb;
+    --color-dark: #131a10;
+    --color-gold: #c9a96e;
+    --color-muted: #6b6b63;
+    --color-link: #1a1a17;
+    --color-link-hover: #c9a96e;
 }
 
 * {
